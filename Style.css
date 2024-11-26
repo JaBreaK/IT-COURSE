@@ -1,0 +1,365 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Navbar Styling */
+#navbar {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#navbar .nav-link {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8); /* Warna navbar link */
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Mengatur agar tidak ada perubahan warna saat dipilih */
+#navbar .nav-link.active {
+    color: #000000; /* Warna saat item navbar aktif */
+    text-decoration: none; /* Menghilangkan underline jika ada */
+}
+
+/* Hover dan active untuk navbar link */
+#navbar .nav-link:hover {
+    color: #ff0000;
+    transform: translateY(-2px);
+}
+
+#navbar .nav-link:focus {
+    color: #00d4ff;
+    outline: none; /* Menghilangkan garis fokus */
+}
+
+/* Navbar Dropdown */
+#navbar .dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .dropdown-item {
+    color: #020202;
+    transition: all 0.3s ease;
+}
+
+#navbar .dropdown-item:hover {
+    color: #007bff;
+    background-color: #ffffff; /* Latar belakang saat hover */
+}
+
+/* Get Started Button */
+.btn-gradient {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #00d4ff, #007bff);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-login {
+    padding: 5px 15px;  /* Mengurangi padding (jarak dalam tombol) */
+    font-size: 14px;    /* Menurunkan ukuran font tombol */
+    height: auto;       /* Sesuaikan tinggi tombol dengan konten */
+}
+
+header {
+    background: linear-gradient(white);
+    padding: 100px 0;
+    text-align: center;
+    color: #000000;
+    margin: 0px; /* Mengurangi jarak atas header */
+    padding:10px; /* Menghilangkan padding atas pada header */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Memperhalus pergerakan carousel */
+.carousel-inner {
+    transition: transform 0.5s ease; /* Memperhalus transisi gerakan slide */
+}
+
+/* Menambahkan kelas untuk pergerakan halus pada setiap item */
+.carousel-item {
+    height: 80vh;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+
+.counter-container {
+    background-color: #ffffff;
+    padding: 60px 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #00bcd4;
+    transition: transform 0.3s ease;
+}
+
+.counter p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.row .counter:hover {
+    transform: scale(1.1);
+}
+
+/* Font Import (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Global Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Logo Section */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Navbar */
+#navbar {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+#navbar .nav-link {
+    font-size: 1rem;
+    color: rgba(0, 123, 255, 0.8); /* Warna biru transparan */
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#navbar .nav-link:hover {
+    color: #3572b8;
+    transform: scale(1.1);
+}
+
+#navbar .nav-link.active {
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #212529;
+    border: none;
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+    transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+    color: #00d4ff;
+}
+
+/* Button Styling */
+.btn-gradient {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #00d4ff, #007bff);
+    transform: scale(1.05);
+}
+
+.hero-content {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* About Us Section */
+#about-us {
+    padding: 60px 0; /* Ruang di atas dan bawah */
+}
+
+#about-us h2 {
+    font-size: 36px;
+    color: #343a40;
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+}
+
+#about-us .btn {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* General Card Styling */
+.course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 500px; /* Ensure all cards are the same height */
+}
+
+.course-card img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course-card h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.course-card p {
+    flex-grow: 1;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.course-card .btn-primary {
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.course-card .btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Carousel */
+#coursesCarousel .carousel-inner {
+    padding: 20px 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #0056b3;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.r {
+    background-color: #292b2c;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #ff4081;
+}
+
+/* Animation for cards and counters */
+.card, .counter {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.visible, .counter.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 60px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.contact-info a {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}

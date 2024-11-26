@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcamp Academy</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS for animations -->
+   <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+ <!-- Navbar Section -->
+<header>
+  <!-- Logo Section -->
+  <div class="bg-transparent text-center py-3">
+    <a class="navbar-brand fw-bold fs-1 text-gradient" href="#">
+      <span class="text-primary">GODING</span> Academy
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top sticky-top">
+    <div class="container">
+      <!-- Toggle Button (For mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold px-3" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="#courses">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Mobile Development</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
+              <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold px-3" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold px-3" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold px-3" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+        <a class="btn btn-primary text-white px-4 py-2 rounded-pill" href="/login.html">Get Started</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-content" style="background-image: url('kiles.png');">
+          <div class="text-center text-white">
+            <h1 class="fw-bold display-4">Learn to Code Like a Pro</h1>
+            <p class="lead">Join our community of developers and designers.</p>
+            <a href="#courses" class="btn btn-gradient px-5 py-3 mt-3">Explore Courses</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-content" style="background-image: url('2.png');">
+          <div class="text-center text-white">
+            <h1 class="fw-bold display-4">Upskill Yourself Today</h1>
+            <p class="lead">Learn the most in-demand skills in tech.</p>
+            <a href="/signup" class="btn btn-gradient px-5 py-3 mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-content" style="background-image: url('3.jpeg');">
+          <div class="text-center text-white">
+            <h1 class="fw-bold display-4">Transform Your Career</h1>
+            <p class="lead">Learn from the best instructors in the industry.</p>
+            <a href="/testimonials" class="btn btn-gradient px-5 py-3 mt-3">See Success Stories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- About Us Section -->
+<section id="about-us" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">About Us</h2>
+    <p class="lead text-muted">
+      Welcome to GODING, a platform dedicated to empowering developers, learners, 
+      and businesses with top-notch coding resources and programs. Our mission 
+      is to inspire and educate individuals in the tech industry through hands-on 
+      training and real-world projects. Join us and explore the limitless possibilities 
+      of the digital world!
+    </p>
+    <div class="mt-4">
+      <a href="#courses" class="btn btn-primary rounded-pill px-4">Explore Programs</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Courses Section -->
+<section id="courses" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Popular Courses</h2>
+    <div id="coursesCarousel" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4">
+            <!-- Full Stack Java Developer -->
+            <div class="col-md-4 d-flex">
+              <div class="card shadow-lg border-0 course-card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Full Stack Java">
+                <div class="card-body">
+                  <h5 class="card-title">Full Stack Java Developer</h5>
+                  <p class="card-text">Learn full-stack Java development with hands-on projects.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Python for Data Science -->
+            <div class="col-md-4 d-flex">
+              <div class="card shadow-lg border-0 course-card">
+                <img src="gambar1.jpeg" class="card-img-top" alt="Web Development">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">Build modern websites using HTML, CSS, JavaScript, and more.</p>
+                  <a href="materi-webdev/materi1.html" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Digital Marketing -->
+            <div class="col-md-4 d-flex">
+              <div class="card shadow-lg border-0 course-card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Digital Marketing">
+                <div class="card-body">
+                  <h5 class="card-title">Digital Marketing</h5>
+                  <p class="card-text">Learn how to drive business growth through digital channels.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <!-- Web Development -->
+            <div class="col-md-4 d-flex">
+              <div class="card shadow-lg border-0 course-card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Web Development">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">Build modern websites using HTML, CSS, JavaScript, and more.</p>
+                  <a href="materi-webdev/materi1.html" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- UI/UX Design -->
+            <div class="col-md-4 d-flex">
+              <div class="card shadow-lg border-0 course-card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="UI/UX Design">
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX Design</h5>
+                  <p class="card-text">Learn the principles of UI/UX design for building user-friendly interfaces.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Data Science -->
+            <div class="col-md-4 d-flex">
+              <div class="card shadow-lg border-0 course-card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Data Science">
+                <div class="card-body">
+                  <h5 class="card-title">Data Science</h5>
+                  <p class="card-text">Explore the world of data science and become proficient with data manipulation tools.</p>
+                  <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="contact-info">
+            <strong>Phone:</strong> +123 456 7890 <br>
+            <strong>Email:</strong> info@bootcampacademy.com
+          </p>
+          <div id="google-map" style="height: 300px;"></div>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Bootcamp Academy. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Google Maps Embed API (Optional) -->
+  <script src="script.js">
+  </script>
+
+</body>
+</html>
