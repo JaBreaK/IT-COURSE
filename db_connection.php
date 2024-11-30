@@ -1,5 +1,5 @@
 <?php
-$servername = "sql200.infinityfree.com";
+$servername = "sql200.infinityfree.com:3306";
 $username = "if0_37823201";
 $password = "GodingGacor2024"; // Default password jika pakai XAMPP
 $dbname = "if0_37823201_godingacademy";
