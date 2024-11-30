@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelajaran Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .sidebar {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      height: 100%;
+      border-right: 1px solid #ddd;
+    }
+    .quiz-section {
+      display: none;
+    }
+    .question {
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+    .question-answer-btn {
+      transition: transform 0.3s ease;
+    }
+    .question-answer-btn:hover {
+      transform: scale(1.05);
+    }
+    .quiz-result {
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .explanation {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-check-label {
+      font-size: 1.1rem;
+    }
+    .question-answer-btn {
+      width: 100%;
+    }
+    .quiz-question-container {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .quiz-question-container h5 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="bg-primary text-white text-center py-3">
+    <h1>Kursus: Full Stack Developer</h1>
+    <p>Belajar mengembangkan aplikasi web menggunakan Front-End dan Back-End</p>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top sticky-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold px-3" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold px-3" href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+          <a class="btn btn-primary text-white px-4 py-2 rounded-pill" href="/login.html">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h5>Daftar Materi</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active">1. Pengantar Full Stack Developer</li>
+          <li class="list-group-item">2. Front-End Development: HTML, CSS, JavaScript</li>
+          <li class="list-group-item">3. Back-End Development: Node.js, Express</li>
+          <li class="list-group-item">4. Database: MongoDB, SQL</li>
+          <li class="list-group-item">5. Integrasi dan Deploy Aplikasi</li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <div id="learning-section">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allowfullscreen></iframe>
+          </div>
+          
+          <!-- Penjelasan Materi -->
+          <div class="explanation">
+            <h4>Penjelasan Materi: Pengantar Full Stack Developer</h4>
+            <p>Full Stack Developer adalah seorang pengembang perangkat lunak yang menguasai baik pengembangan sisi front-end (UI/UX) maupun back-end (server, database). Dalam materi ini, kita akan membahas dasar-dasar Full Stack Development dan komponen yang dibutuhkan dalam membangun aplikasi web modern.</p>
+            <p>Setelah mempelajari materi ini, kamu akan memahami proses pengembangan aplikasi web dari awal hingga selesai dengan keterampilan dalam mengelola front-end dan back-end.</p>
+          </div>
+
+          <div class="d-flex justify-content-between mb-4">
+            <a href="/index.html" class="btn btn-secondary">Sebelumnya</a>
+            <button id="finish-lesson" class="btn btn-success">Selesai Materi</button>
+          </div>
+        </div>
+
+        <!-- Kuis -->
+        <div id="quiz-section" class="quiz-section">
+          <h4>Kuis: Pengantar Full Stack Developer</h4>
+
+          <!-- Soal 1 -->
+          <div id="question1" class="question quiz-question-container">
+            <h5>Apakah Full Stack Developer hanya bekerja dengan front-end saja?</h5>
+            <form id="quiz-form1">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question1" id="option1" value="yes">
+                <label class="form-check-label" for="option1">Ya</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question1" id="option2" value="no">
+                <label class="form-check-label" for="option2">Tidak</label>
+              </div>
+              <button type="submit" class="btn btn-primary question-answer-btn mt-3">Kirim Jawaban</button>
+            </form>
+          </div>
+
+          <!-- Soal 2 -->
+          <div id="question2" class="question quiz-question-container" style="display: none;">
+            <h5>Framework JavaScript yang populer untuk front-end adalah?</h5>
+            <form id="quiz-form2">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="option4" value="react">
+                <label class="form-check-label" for="option4">React</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="option5" value="angular">
+                <label class="form-check-label" for="option5">Angular</label>
+              </div>
+              <button type="submit" class="btn btn-primary question-answer-btn mt-3">Kirim Jawaban</button>
+            </form>
+          </div>
+
+          <!-- Soal 3 -->
+          <div id="question3" class="question quiz-question-container" style="display: none;">
+            <h5>Apa itu Node.js?</h5>
+            <form id="quiz-form3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question3" id="option6" value="backend">
+                <label class="form-check-label" for="option6">Backend Framework</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question3" id="option7" value="database">
+                <label class="form-check-label" for="option7">Database</label>
+              </div>
+              <button type="submit" class="btn btn-primary question-answer-btn mt-3">Kirim Jawaban</button>
+            </form>
+          </div>
+
+          <div id="quiz-result" class="quiz-result">
+            <a href="materi2.html" class="btn btn-primary mt-3">Ke Materi 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Mengubah tampilan kuis dan hasil
+    document.getElementById("finish-lesson").addEventListener("click", function() {
+      document.getElementById("learning-section").style.display = "none";
+      document.getElementById("quiz-section").style.display = "block";
+    });
+
+    // Proses jawaban kuis
+    document.getElementById("quiz-form1").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("question1").style.display = "none";
+      document.getElementById("question2").style.display = "block";
+    });
+
+    document.getElementById("quiz-form2").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("question2").style.display = "none";
+      document.getElementById("question3").style.display = "block";
+    });
+
+    document.getElementById("quiz-form3").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("question3").style.display = "none";
+      document.getElementById("quiz-result").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>

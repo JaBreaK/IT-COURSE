@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pesan</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="akun.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Akun</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="messages.html" class="active">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Pesan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Bantuan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Pengaturan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Keluar</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Cari pesan">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="User Profile">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">320</div>
+                        <div class="cardName">Pesan Masuk</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">56</div>
+                        <div class="cardName">Pesan Terkirim</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="send-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">12</div>
+                        <div class="cardName">Pesan Belum Dibaca</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Daftar Pesan ================= -->
+            <div class="details">
+                <div class="recentMessages">
+                    <div class="cardHeader">
+                        <h2>Pesan Terbaru</h2>
+                        <a href="#" class="btn">Lihat Semua</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Pengirim</td>
+                                <td>Pesan</td>
+                                <td>Tanggal</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Jamal</td>
+                                <td>Apakah kamu siap untuk pertemuan minggu depan?</td>
+                                <td>2024-11-27</td>
+                                <td><span class="status unread">Belum Dibaca</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Udin</td>
+                                <td>Info tentang proyek baru yang ingin dibahas.</td>
+                                <td>2024-11-26</td>
+                                <td><span class="status read">Dibaca</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Siti</td>
+                                <td>Konfirmasi tentang laporan yang sudah disubmit.</td>
+                                <td>2024-11-25</td>
+                                <td><span class="status read">Dibaca</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Ali</td>
+                                <td>Reminder untuk presentasi besok pagi.</td>
+                                <td>2024-11-24</td>
+                                <td><span class="status unread">Belum Dibaca</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Jamal</td>
+                                <td>Perlu bantuan dalam analisis data minggu lalu.</td>
+                                <td>2024-11-23</td>
+                                <td><span class="status read">Dibaca</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="assets/js/my_chart.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

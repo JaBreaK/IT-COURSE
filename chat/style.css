@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f8;
+}
+
+/* Initially hide the floating messenger */
+.floating-messenger {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.messenger-header {
+    background-color: #05b0ff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#chat-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    overflow-y: auto; /* Menambah scroll jika panjang */
+}
+
+.messenger-footer {
+    padding: 10px;
+    background-color: #f4f4f8;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #05b0ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #05b0ff;
+}
+
+.chat-body ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.chat-body {
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 100%;
+    overflow-y: auto;
+}
+/* Style for the close button */
+#close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#close-btn:hover {
+    color: #ff0000;
+}
+
+/* Style for the toggle button */
+#toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #05b0ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-btn:hover {
+    background-color: #05b0ff;
+}
+
+.dark-mode .floating-messenger {
+    background-color: #444;
+}
+
+.dark-mode .messenger-header {
+    color: #444;
+}
+.dark-mode .messenger-footer {
+    background-color: #444;
+}
+.dark-mode input {
+    background-color: #444;
+}
+.dark-mode #send-btn {
+    color: #444;
+}
+.dark-mode .chat-body {
+    background-color: #444;
+}

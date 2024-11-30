@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Accounts</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Tabel untuk Menampilkan Data Akun -->
+    <div class="details">
+        <div class="recentOrders">
+            <div class="cardHeader">
+                <h2>Manage User Accounts</h2>
+                <a href="#" class="btn">Add New User</a>
+            </div>
+            <div class="search">
+                <label>
+                    <input type="text" id="searchInput" placeholder="Search here">
+                </label>
+            </div>
+
+            <table class="accountTable">
+                <thead>
+                    <tr style="color: #05b0ff">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="accountList">
+                    <!-- Data akun akan dimasukkan di sini menggunakan JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk mengambil data akun
+        function fetchAccounts() {
+            fetch('/admin/fetch_accounts.php')  // Pastikan jalur ini benar
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Data fetched:', data);  // Debugging: lihat data yang diterima
+
+                    // Ambil elemen tbody untuk mengisi data akun
+                    const tableBody = document.getElementById('accountList');
+                    tableBody.innerHTML = '';  // Kosongkan isi tabel sebelum menambahkan data baru
+
+                    // Iterasi melalui data dan masukkan ke dalam tabel
+                    data.forEach(account => {
+                        const row = `
+                            <tr>
+                                <td>${account.nama}</td>
+                                <td>${account.email}</td>
+                                <td>${account.role}</td>
+                                <td>
+                                    <button class="btn" onclick="editAccount(${account.id})">Edit</button>
+                                    <button class="btn" onclick="deleteAccount(${account.id})">Delete</button>
+                                </td>
+                            </tr>
+                        `;
+                        tableBody.innerHTML += row;  // Tambahkan baris ke dalam tabel
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching accounts:', error);
+                });
+        }
+
+        // Panggil fungsi fetchAccounts ketika halaman selesai dimuat
+        document.addEventListener('DOMContentLoaded', fetchAccounts);
+    </script>
+
+</body>
+</html>

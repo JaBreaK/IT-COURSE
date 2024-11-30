@@ -1,0 +1,628 @@
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Warna latar belakang lebih terang dan lembut */
+    color: #333; /* Warna teks yang tetap terbaca dengan jelas */
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+/* Navbar */
+#navbar {
+    background-color: #343a40; /* Warna navbar lebih gelap dengan kontras bagus */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .nav-link {
+    font-size: 1rem;
+    color: #1a73e8; /* Warna teks navbar putih agar lebih kontras */
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#navbar .nav-link:hover {
+    color: #00bcd4; /* Biru segar sebagai warna hover */
+    transform: translateY(-2px);
+}
+
+#navbar .nav-link.active {
+    color: #1a73e8; /* Biru muda yang lebih cerah saat item aktif */
+    font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #495057; /* Latar dropdown lebih gelap dengan border rounded */
+    border: none;
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+    transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+    color: #1a73e8;
+}
+
+/* Heading */
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.separator-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #1a73e8, #ff8c00); /* Gradien halus dengan warna biru dan oranye */
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan lembut */
+}
+
+/* Subheading */
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Text Section */
+.text-section .description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    gap: 100px;
+    font-size: 20px;
+}
+
+/* Button */
+.btn-class {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  linear-gradient(to right, #1a73e8, #ff8c00);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-class:hover {
+    background-color: #b54a08;
+}
+
+/* Image */
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container untuk stats */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    background:  linear-gradient(to right, #1a73e8, #ff8c00);
+}
+
+/* Stats Block untuk setiap angka */
+.stats-block {
+    border: none; /* Menghilangkan border */
+    padding: 20px;
+    width: 100%;
+    max-width: 30%; /* Mengatur lebar setiap blok */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk angka */
+.stats-number {
+    font-size: 3rem; /* Ukuran angka lebih besar */
+    font-weight: bold;
+    margin-bottom: 10px; /* Jarak antara angka dan teks */
+    color: white; /* Warna emas */
+}
+
+/* Gaya untuk teks di bawah angka */
+.stats-text {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: white; /* Warna putih untuk teks */
+}
+
+/* Menambahkan efek responsif */
+@media (max-width: 768px) {
+    .stats-block {
+        max-width: 100%; /* Membuat blok 100% lebar di perangkat kecil */
+    }
+
+    .stats-number {
+        font-size: 2rem; /* Ukuran angka sedikit lebih kecil */
+    }
+
+    .stats-text {
+        font-size: 1rem; /* Ukuran teks sedikit lebih kecil */
+    }
+}
+
+
+/* ini style mekanisme training online class */
+/* Kontainer utama */
+.training-mechanism-container {
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Header */
+.header-section {
+    margin-bottom: 40px;
+}
+
+.heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #d85d0a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #d85d0a;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1900px;  /* Diperbesar dari 1000px menjadi 1200px */
+    margin: 30px auto;
+    padding: 40px;  /* Diperbesar padding-nya */
+    border-radius: 15px;
+}
+
+
+/* Section gambar */
+.image-section {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Detail */
+.detail-section {
+    flex: 1;
+    max-width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Heading Detail Section */
+.detail-section h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #d85d0a;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk list */
+.training-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.training-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.training-list li span {
+    font-weight: bold;
+    color:  linear-gradient(to right, #1a73e8, #ff8c00);
+}
+
+/* Button Harga */
+.price {
+    background:  linear-gradient(to right, #1a73e8, #ff8c00);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.price:hover {
+    background-color: #00d4ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .image-section {
+        max-width: 100%;
+    }
+
+    .detail-section {
+        max-width: 100%;
+    }
+
+    .detail-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .training-list li {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* ini style mengapa bootcamp */
+/* Container untuk kotak utama */
+.icon-box-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Menghapus margin */
+    padding: 20px; /* Padding tetap agar ada ruang di sekeliling */
+    width: 100%; /* Mengambil seluruh lebar layar */
+    background-color: #f9f9f9; /* Warna latar belakang untuk kotak utama */
+    border-radius: 12px;
+   
+}
+
+/* Grid untuk kotak icon dalam satu container */
+.icon-box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 32px; /* Jarak antar kotak */
+    width: 100%; /* Membuat container ini mengambil seluruh lebar */
+}
+
+/* Setiap kotak icon */
+.icon-box {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Gambar dalam kotak icon */
+.icon-box img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+
+/* Judul dalam kotak icon */
+.icon-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Deskripsi dalam kotak icon */
+.icon-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .icon-box-container {
+        grid-template-columns: 1fr; /* Menjadikan 1 kolom di perangkat kecil */
+    }
+
+    .icon-box img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .icon-box h3 {
+        font-size: 18px;
+    }
+
+    .icon-box p {
+        font-size: 14px;
+    }
+}
+
+  
+/* Mengatur tampilan dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    color: #d85d0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Konten Kolom */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling untuk kolom kiri dan kanan */
+  .column {
+    flex: 1;
+    min-width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .column .text-content {
+    margin-top: 20px;
+  }
+  
+  .column .text-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .column .text-content p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background:  linear-gradient(to right, #1a73e8, #ff8c00);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00d4ff;
+  }
+  
+  /* Responsif untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .column {
+      min-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
+
+  /* ini style pendaftaran */
+
+  /* Reset dan styling dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    color: #d85d0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Layout Konten */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .info-box {
+    margin-bottom: 30px;
+  }
+  
+  .icon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .info-text h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info-text p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Responsif untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .column {
+      min-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
+
+  /* style cerita alumni */
+  /* Container untuk alumni-info supaya elemen-elemen bisa berada dalam satu baris */
+.alumni-container {
+    display: flex;
+    justify-content: center;  /* Memusatkan elemen */
+    gap: 40px;  /* Menambah jarak antar alumni */
+    flex-wrap: nowrap;  /* Tidak membuat elemen membungkus */
+    margin: 0 auto;  /* Memusatkan konten */
+    max-width: 100%;  /* Agar responsif */
+    padding: 0 20px;  /* Menambah padding di sisi kontainer */
+  }
+  
+  /* Styling untuk setiap alumni-info */
+  .alumni-info {
+    text-align: center;
+    width: 25%;  /* Mengatur lebar setiap elemen alumni */
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .alumni-info:hover {
+    transform: translateY(-10px);  /* Efek hover agar sedikit terangkat */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .alumni-info img {
+    border-radius: 50%;  /* Membuat gambar bulat */
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .alumni-info h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .alumni-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Untuk membuat tombol tetap di tengah */
+  .btn-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Responsive untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .alumni-container {
+      flex-direction: column;  /* Membuat kolom berurutan saat di perangkat kecil */
+      gap: 20px;
+    }
+    
+    .alumni-info {
+      width: 100%;  /* Membuat setiap alumni mengambil 100% lebar */
+    }
+  }
+  
+  
