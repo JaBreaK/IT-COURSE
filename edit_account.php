@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 // Koneksi ke database
-$conn = new mysqli('sql200.infinityfree.com:3306', 'if0_37823201', 'GodingGacor2024', 'if0_37823201_godingacademy');
+$conn = new mysqli('sql.freedb.tech:3306', 'freedb_jabreak', 'J9gTE?&pgnFS7Jm', 'freedb_admin-itcourse');
 if ($conn->connect_error) {
     die(json_encode(["error" => "Connection failed: " . $conn->connect_error]));
 }

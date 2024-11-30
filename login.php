@@ -1,9 +1,9 @@
 <?php
 // Koneksi ke database
-$host = "sql200.infinityfree.com:3306";
-$user = "if0_37823201";
-$password = "GodingGacor2024";
-$database = "if0_37823201_godingacademy";
+$host = "sql.freedb.tech:3306";
+$user = "freedb_jabreak";
+$password = "J9gTE?&pgnFS7Jm";
+$database = "freedb_admin-itcourse";
 
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {

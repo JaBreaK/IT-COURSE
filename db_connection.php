@@ -1,8 +1,8 @@
 <?php
-$servername = "sql200.infinityfree.com:3306";
-$username = "if0_37823201";
-$password = "GodingGacor2024"; // Default password jika pakai XAMPP
-$dbname = "if0_37823201_godingacademy";
+$servername = "sql.freedb.tech:3306";
+$username = "freedb_jabreak";
+$password = "J9gTE?&pgnFS7Jm"; // Default password jika pakai XAMPP
+$dbname = "freedb_admin-itcourse";
 
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
